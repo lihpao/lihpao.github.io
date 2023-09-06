@@ -1,0 +1,469 @@
+*{
+ margin:0 ;
+ padding :0;
+ box-sizing:border-box;
+ text-decoration: none;   /*超鏈結預設 */
+ transition: 0.5s all;
+ 
+
+
+ }
+                                           /* 頂端表單 */
+
+/* 添加樣式到 header */
+header {
+   background-color: #6495ED; /* 背景顏色 */
+   color: white; /* 文字顏色 */
+   padding:20px; /* 內邊距 */
+   text-align: center; /* 文字居中對齊 */
+   width:auto; 
+   
+   }
+
+/* 調整 logo 圖片樣式 */
+header img {
+   width: 150px;
+   height: auto;
+}
+
+/* 調整標題樣式 */
+header h1 {
+   font-size: 36px;
+   margin-top: 10px;
+}
+/* 頂端選單 */
+.navbar1 a{
+   margin: 10px;
+   display: inline-block;
+   margin-right: 40px;     /* 間隔    */
+   font-size: 30px;
+   color: #fff; /* 連結顏色 */
+   text-decoration: none; /* 移除底線 */
+   transition: color 0.3s; /* 添加過渡效果 */
+}
+.navbar1 a:hover {
+   color:#888888; /* 鼠標懸停時的顏色 */
+}
+ 
+
+/* 調整導航菜單樣式 */
+.navbar {
+   margin: 20px;
+   
+}
+
+
+.navbar a {
+   display: inline-block;
+   margin-right: 40px;     /* 間隔    */
+   font-size: 30px;
+   color: #fff; /* 連結顏色 */
+   text-decoration: none; /* 移除底線 */
+   transition: color 0.3s; /* 添加過渡效果 */
+ 
+ 
+}
+
+.navbar a:hover {
+   color:#888888; /* 鼠標懸停時的顏色 */
+}
+ 
+    
+ 
+ 
+
+/* 首頁 */
+.home {
+   background-image:url("圖片/S__104529955.jpg");
+   background-size: cover;
+   padding: 0; /* 移除內邊距 */
+   opacity: 0.9;
+   background-repeat: no-repeat;
+   width: 100%; /* 填滿父元素的寬度 */
+   height: 1200px; /* 使用視窗高度作為容器高度 */
+   
+   @media (max-width: 768px) {
+      background-image: url("圖片/S__104529955.jpg");
+      width:auto ;
+      height: auto;
+      }
+   }
+.首頁標題{
+   text-align: center;
+   font-size: 500%;
+   color: hsla(0, 22%, 7%, 0.6); /* 使用 HSLA 表示灰色並設置透明度 */
+   animation: fadeIn 3s ease-in-out;
+   
+
+}
+@keyframes fadeIn {
+   from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+.home p{
+   text-align: center;
+   font-size: 400%;
+   color: hsla(0, 22%, 7%, 0.6); /* 使用 HSLA 表示灰色並設置透明度 */
+   text-shadow:2px 2px 4px rgb(90, 90, 90) ;
+   animation: flicker1 2s ease-in-out;
+  
+}
+ 
+@keyframes flicker1 {
+   0% {
+       opacity: 0;
+   }
+   50% {
+       opacity: 0.5;
+   }
+   100% {
+       opacity: 1;
+   }
+}
+
+  
+
+  
+
+
+ /* 服務項目 */
+ .server{
+   background-image:linear-gradient(to bottom, transparent, white), url("圖片/S__104529955.jpg");
+   background-size: cover;
+   padding: 0; /* 移除內邊距 */
+   opacity: 0.9;
+   background-repeat: no-repeat;
+   width: 100%; /* 填滿父元素的寬度 */
+   height: 1200px; /* 使用視窗高度作為容器高度 */
+   @media (max-width: 768px) {
+      background-image: url("圖片/S__104529955.jpg");
+      width:auto ;
+      height: auto;
+      }
+   }
+.服務項目標題{
+   text-align: center;
+   font-size: 300%;
+   color: hsla(0, 22%, 7%, 0.6); /* 使用 HSLA 表示灰色並設置透明度 */
+  
+   
+}
+.server .box-container {
+   display: flex;
+   flex-direction: row;
+   width: 1200px; /* 設定容器寬度，這個值可以根據你的需求調整 */
+   height: auto;
+   align-items: center;
+   justify-content: center;
+   flex-wrap: wrap; /* 換行排列 */
+   margin: 0 auto; /* 水平置中 */
+}
+
+.server .box-container .box {
+   width: 350px;
+   height: 500px;
+   margin: 20px;
+   position: relative;
+   overflow: hidden;
+   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+   border: 1px solid black;
+   cursor: pointer;
+   border-radius: 20px;
+   z-index: 3;
+   transition: transform 0.3s ease-in-out;
+   animation: flicker2 4s ease-in-out;
+}
+@keyframes flicker2 {
+   0% {
+       opacity: 0;
+   }
+   50% {
+       opacity: 0.5;
+   }
+   100% {
+       opacity: 1;
+   }
+}
+
+.server .box-container .box:hover {
+   transform: scale(1.05);
+}
+
+.server .box-container .box h3 {
+   background-color: white;
+   background-size: 10px;
+   color: #6495ED;
+   font-size: 28px;
+   margin-bottom: 0;
+   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+   font-weight: bold;
+   padding-left: 10px;
+}
+
+.server .box-container .box img {
+   width: 350px;
+   height: 500px;
+}
+
+
+
+
+/* 作品展示 */
+
+.work{
+   background-image:linear-gradient(to bottom, transparent, white), url("圖片/S__104529955.jpg");
+   background-size: cover;
+   padding: 0; /* 移除內邊距 */
+   opacity: 0.9;
+   background-repeat: no-repeat;
+   width: 100%; /* 填滿父元素的寬度 */
+   height: 900px; /* 使用視窗高度作為容器高度 */
+   @media (max-width: 768px) {
+      background-image: url("圖片/S__104529955.jpg");
+      width:auto ;
+      height: auto;
+      }
+}
+.作品展示標題{
+   text-align: center;
+   font-size: 300%;
+   color: hsla(0, 22%, 7%, 0.6); /* 使用 HSLA 表示灰色並設置透明度 */
+  }
+.image-container {
+   display: flex;
+   overflow-x: scroll;
+   padding: 5px;
+   border: 10px solid #888888;
+   width: 1000px;
+   height:450px;
+   white-space: nowrap;
+   background-color: #f5f5f5; /* 背景色 */
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 陰影效果 */
+   border-radius: 10px; /* 圓角 */
+}
+
+.image-container img {
+   max-width:500px; 
+   max-height:500px;
+   margin-right: 15px;
+   cursor: pointer; /* 設置滑鼠游標 */
+   border: 1px solid #ddd; /* 添加圖片邊框 */
+   border-radius: 10px; /* 圓角 */
+   transition: transform 0.3s ease-in-o
+}
+.image-container img:hover {
+   transform: scale(1.05);
+   border-color: #00ffff; /* 鼠標懸停時變更邊框顏色 */
+}
+
+
+                         /* 模態框樣式 */
+.modal {
+   display: none;
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.7);
+   justify-content: center;
+   align-items: center;
+  
+  
+}
+
+.modal-content {
+   position: relative;
+   max-width: 90%;
+   max-height: 90%;
+   background-color: #fff;
+   padding: 10px;
+   text-align: center;
+   overflow: auto;
+ 
+   
+}
+
+.modal img {
+   max-width: 90%;
+   max-height: 90%;
+}
+
+.close {
+   position: absolute;
+   top: 10px;
+   right: 10px;
+   cursor: pointer;
+   font-size: 40px;
+   border-style: inset;
+  
+}
+.container {
+   display: flex;
+   justify-content: center; /* 水平置中 */
+   align-items: center; /* 垂直置中 */
+   height: 90vh; /* 設定容器高度為視窗高度 */
+}
+/* 左右按鈕 */
+
+
+
+/* 聯絡我們 */
+
+ .contact{
+   background-image:linear-gradient(to bottom, transparent, white), url("圖片/S__104529955.jpg");
+   background-size: cover;
+   padding: 0; /* 移除內邊距 */
+   opacity: 0.9;
+   background-repeat: no-repeat;
+   width: 100%; /* 填滿父元素的寬度 */
+   height: 1500px; /* 使用視窗高度作為容器高度 */
+   @media (max-width: 600px) {
+      background-image: url("圖片/S__104529955.jpg");
+      width:auto ;
+      height: auto;
+      }
+
+   }
+   
+   .聯絡我們標題{
+      text-align: center;
+      font-size: 300%;
+      color: hsla(0, 22%, 7%, 0.6); /* 使用 HSLA 表示灰色並設置透明度 */
+      
+   }
+  .營業時間{
+   margin:0px 30px 0px 0px;
+  }
+
+
+   .聯絡我們內容{
+     margin:30px;
+    
+     
+    }
+    
+   
+   .contact p{
+      font-size:30px ;
+      margin:10px ;
+      font-weight: bold; 
+      color:blue;
+   }
+   
+  
+  .聯絡我們內容 i{
+   color: initial; /* 默认颜色 */
+   transition: color 0.3s ease, transform 0.3s ease; /* 颜色和变换属性的过渡效果 */
+ }
+ 
+  .聯絡我們內容 i:hover{
+   color: #000; /* 鼠标悬停时的颜色 */
+   transform: scale(1.3); /* 鼠标悬停时的放大效果 */
+ }
+ iframe {
+   max-width: 100%;
+   height: 250px; 
+ }
+ 
+ 
+   /* 底 */
+
+.bottom{
+  background-color: #6495ED;
+  height: 100px;
+  width:auto;
+}
+.bottom i{
+   margin:0px 0px 0px 10px;
+  
+    }
+.資訊{
+   display: inline;
+}
+
+
+/* 手機版 */
+@media (max-width: 600px) {
+   .server .box-container {
+      display: flex;
+      flex-direction: column; /* 垂直排列 */
+      align-items:flex-start;
+   }
+    .聯絡我們內容{
+      margin:auto;
+      width: 100%; /* 使用100%的宽度以适应小屏幕 */
+     height: auto; /* 自适应高度 */
+    }
+    .首頁標題{
+     font-size:50px ;
+
+    }
+    .home p{
+      font-size:50px;
+
+    }
+ 
+}
+
+/* 第一區 */
+
+
+   #menu{
+      display:initial;
+      position:absolute;
+      left:10px;
+      top: 20px;
+      z-index:100;
+      position: fixed;
+      font-size:25px;
+      cursor: pointer;
+      color:#cd64ed;
+      border: 1px solid #888888;
+      border-radius: 5px;
+      background-color: #6495ED;
+      padding: 8px;
+      
+    }
+
+   
+   header .navbar{
+      position: absolute;
+      top: 80px; left:0; right:0;
+      background-color: #6495ED ;
+      clip-path:polygon(0 0, 10% 0, 10% 0,0 0);
+      padding: 10px;
+      z-index: 100;
+      position: fixed;
+      width:800px ;
+      height:300px;
+      opacity:0.8 ;
+      @media (max-width: 600px) {
+         width:300px ;
+         height:300px;
+      }
+
+      
+   }
+   header .navbar a{
+      display: block;
+      font: size 20px;
+      font: weight 50px;;
+      color:white;
+      margin:10px; padding: 6px;
+      border-left:3px  solid rgb(90, 90, 90);
+      background-color: rgb(90, 90, 90);
+      z-index:110;
+      
+  }
+  header .navbar.active{
+   clip-path:polygon(0 0,100% 0,100% 100%,0 100%);
+   padding:10px;
+  }
+
+
+
