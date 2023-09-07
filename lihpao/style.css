@@ -82,10 +82,10 @@ header h1 {
    width: 100%; /* 填滿父元素的寬度 */
    height: 1200px; /* 使用視窗高度作為容器高度 */
    
-   @media (max-width: 768px) {
+   @media (max-width: 600px) {
       background-image: url("圖片/S__104529955.jpg");
-      width:auto ;
-      height: auto;
+      width:100% ;
+      height:100%;
       }
    }
 .首頁標題{
@@ -139,10 +139,10 @@ header h1 {
    background-repeat: no-repeat;
    width: 100%; /* 填滿父元素的寬度 */
    height: 1200px; /* 使用視窗高度作為容器高度 */
-   @media (max-width: 768px) {
+   @media (max-width: 600px) {
       background-image: url("圖片/S__104529955.jpg");
-      width:auto ;
-      height: auto;
+      width:100% ;
+      height:100%;
       }
    }
 .服務項目標題{
@@ -221,7 +221,7 @@ header h1 {
    opacity: 0.9;
    background-repeat: no-repeat;
    width: 100%; /* 填滿父元素的寬度 */
-   height: 900px; /* 使用視窗高度作為容器高度 */
+   height: 1100px; /* 使用視窗高度作為容器高度 */
    @media (max-width: 768px) {
       background-image: url("圖片/S__104529955.jpg");
       width:auto ;
@@ -253,7 +253,9 @@ header h1 {
    cursor: pointer; /* 設置滑鼠游標 */
    border: 1px solid #ddd; /* 添加圖片邊框 */
    border-radius: 10px; /* 圓角 */
-   transition: transform 0.3s ease-in-o
+   transition: transform 0.3s ease-in-o;
+   
+   
 }
 .image-container img:hover {
    transform: scale(1.05);
@@ -307,6 +309,7 @@ header h1 {
    justify-content: center; /* 水平置中 */
    align-items: center; /* 垂直置中 */
    height: 90vh; /* 設定容器高度為視窗高度 */
+  
 }
 /* 左右按鈕 */
 
@@ -324,8 +327,8 @@ header h1 {
    height: 1500px; /* 使用視窗高度作為容器高度 */
    @media (max-width: 600px) {
       background-image: url("圖片/S__104529955.jpg");
-      width:auto ;
-      height: auto;
+      width:100%;
+      height:100%;
       }
 
    }
@@ -396,7 +399,7 @@ header h1 {
    }
     .聯絡我們內容{
       margin:auto;
-      width: 100%; /* 使用100%的宽度以适应小屏幕 */
+      width:100%; /* 使用100%的宽度以适应小屏幕 */
      height: auto; /* 自适应高度 */
     }
     .首頁標題{
@@ -407,7 +410,15 @@ header h1 {
       font-size:50px;
 
     }
- 
+    .example-element {
+      width: 100%;
+    }
+    .header .navbar {
+      width: 100%; /* 设置为100%以适应小屏幕 */
+   }
+   .w{
+      overflow-x: hidden;
+   } 
 }
 
 /* 第一區 */
