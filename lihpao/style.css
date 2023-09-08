@@ -141,7 +141,7 @@ header h1 {
    height: 1200px; /* 使用視窗高度作為容器高度 */
    @media (max-width: 600px) {
       background-image: url("圖片/S__104529955.jpg");
-      width:100% ;
+      width: 100%; 
       height:100%;
       }
    }
@@ -161,6 +161,10 @@ header h1 {
    justify-content: center;
    flex-wrap: wrap; /* 換行排列 */
    margin: 0 auto; /* 水平置中 */
+   @media (max-width: 600px) {
+      width:100% ;
+      height: 100%;
+   }
 }
 
 .server .box-container .box {
@@ -254,6 +258,7 @@ header h1 {
    border: 1px solid #ddd; /* 添加圖片邊框 */
    border-radius: 10px; /* 圓角 */
    transition: transform 0.3s ease-in-o;
+  
    
    
 }
@@ -274,6 +279,7 @@ header h1 {
    background-color: rgba(0, 0, 0, 0.7);
    justify-content: center;
    align-items: center;
+   z-index: 110;
   
   
 }
@@ -286,6 +292,8 @@ header h1 {
    padding: 10px;
    text-align: center;
    overflow: auto;
+   z-index: 110;
+  
  
    
 }
@@ -293,6 +301,7 @@ header h1 {
 .modal img {
    max-width: 90%;
    max-height: 90%;
+   z-index: 110;
 }
 
 .close {
@@ -302,6 +311,7 @@ header h1 {
    cursor: pointer;
    font-size: 40px;
    border-style: inset;
+   z-index: 110;
   
 }
 .container {
@@ -309,7 +319,7 @@ header h1 {
    justify-content: center; /* 水平置中 */
    align-items: center; /* 垂直置中 */
    height: 90vh; /* 設定容器高度為視窗高度 */
-  
+  z-index: 110;
 }
 /* 左右按鈕 */
 
@@ -325,10 +335,11 @@ header h1 {
    background-repeat: no-repeat;
    width: 100%; /* 填滿父元素的寬度 */
    height: 1500px; /* 使用視窗高度作為容器高度 */
+   z-index:0;
    @media (max-width: 600px) {
       background-image: url("圖片/S__104529955.jpg");
-      width:100%;
-      height:100%;
+      width:auto;
+      height:auto;
       }
 
    }
@@ -416,9 +427,7 @@ header h1 {
     .header .navbar {
       width: 100%; /* 设置为100%以适应小屏幕 */
    }
-   .w{
-      overflow-x: hidden;
-   } 
+   
 }
 
 /* 第一區 */
